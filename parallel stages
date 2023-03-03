@@ -1,4 +1,6 @@
-        stage('TEST') {
+        pipeline {
+          agent any
+          stage('TEST') {
             steps {
                 sh '''
                     sleep 6
